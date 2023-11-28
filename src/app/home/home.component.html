@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6 text-center">
+      <button
+        type="button"
+        class="btn btn-primary"
+        [routerLink]="['activeposts']"
+        routerLinkActive="active"
+      >
+        Post attivi
+      </button>
+    </div>
+    <div class="col-6 text-center">
+      <button
+        type="button"
+        class="btn btn-primary"
+        [routerLink]="['inactiveposts']"
+        routerLinkActive="active"
+      >
+        Post inattivi
+      </button>
+    </div>
+  </div>
+</div>
