@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Post } from '../models/post';
-import { ServiceService } from '../service/service.service';
+import { Post } from '../../models/post';
+import { ServiceService } from '../../service/service.service';
 @Component({
   selector: 'app-inactive-posts',
   templateUrl: './inactive-posts.component.html',

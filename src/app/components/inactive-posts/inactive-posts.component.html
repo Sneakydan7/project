@@ -1,6 +1,13 @@
 <div *ngFor="let Post of posts">
   <div *ngIf="Post.active === 'false'">
-    <div class="card">
+    <div
+      class="card"
+      [ngClass]="{
+        'text-bg-dark': Post.type === 'news',
+        'text-bg-primary': Post.type === 'education',
+        'text-bg-warning': Post.type === 'politics'
+      }"
+    >
       <div class="card-header">//\\</div>
       <div class="card-body">
         <h5 class="card-title">{{ Post.title }}</h5>

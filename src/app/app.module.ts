@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Route } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ActivePostsComponent } from './active-posts/active-posts.component';
-import { InactivePostsComponent } from './inactive-posts/inactive-posts.component';
+import { ActivePostsComponent } from './components/active-posts/active-posts.component';
+import { InactivePostsComponent } from './components/inactive-posts/inactive-posts.component';
 import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CustomComponentComponent } from './components/custom-component/custom-component.component';
 
 const routes: Route[] = [
   {
@@ -30,6 +31,7 @@ const routes: Route[] = [
     InactivePostsComponent,
     HomeComponent,
     NavbarComponent,
+    CustomComponentComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

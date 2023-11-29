@@ -3,4 +3,5 @@ export interface Post {
   body: string;
   title: string;
   active: string;
+  type: string;
 }
